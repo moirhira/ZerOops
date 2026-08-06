@@ -1,0 +1,13 @@
+name: Environment Variables
+
+on: push
+
+env:
+  PROJECT_NAME: ZeroOps
+  AUTHOR: Takaya
+
+jobs:
+  print-env:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "$PROJECT_NAME by $AUTHOR"
