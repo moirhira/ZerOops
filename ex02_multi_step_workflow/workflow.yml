@@ -1,3 +1,5 @@
+on: push
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -13,3 +15,6 @@ jobs:
 
       - name: Echo Commit SHA
         run: echo "Commit SHA ${{ github.sha }}"
+
+
+        name: GitHub Context Variables
