@@ -5,6 +5,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name Checkout
-        uses actions/checkout@v4
-      - run echo Hello
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Echo Hello
+        run: echo Hello

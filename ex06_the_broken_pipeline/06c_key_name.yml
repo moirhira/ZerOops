@@ -4,5 +4,5 @@ on: push
 jobs:
   build:
     runs-on: ubuntu-latest
-    step:
+    steps:
       - run: echo hi
