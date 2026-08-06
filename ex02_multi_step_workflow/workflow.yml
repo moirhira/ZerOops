@@ -1,17 +1,14 @@
-name: Context Variables
-
-on: push
-
 jobs:
-  context:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
       - name: Echo Repository
         run: echo "Repository: ${{ github.repository }}"
 
-      - name: Echo Branch Name
+      - name: Echo Branch
         run: echo "Branch: ${{ github.ref_name }}"
 
       - name: Echo Commit SHA
